@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--========================================================== HEAD ============================================================================================================-->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173678807-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173678807-1');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/favicon.png">
+        <link rel="stylesheet" href="./styles/main.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>ChurroStar</title>
+    </head>
+<!--========================================================== BODY ============================================================================================================-->
+    <body>
+        <h1>CHURROSTAR</h1>
+<!--========================================================== No JavaScript ============================================================================================================-->
+        <noscript>
+            <div class="noscript">
+                <img class="logo_nav" src="./assets/logo.svg" alt="ChurroStar">
+                <h2>Your browser does not support JavaScript or you have it disabled.</h2>
+                <p>Click here: <a href="https://www.enable-javascript.com/" target="_blank">for instructions how to enable JavaScript in your web browser</a>.</p>
+                <h3>Social Media:</h3>
+                <p>Our Facebook: <a href="https://www.facebook.com/ChurroStarTX/" target="_blank">ChurroStarTx</a></p>
+                <p>Our Instagram: <a href="https://www.instagram.com/churrostartx/" target="_blank">@churrostartx</a></p>
+                <h3>Order from:</h3>
+                <a href="https://www.ubereats.com/san-antonio/food-delivery/churrostar/MbO0eGmfRiiYJnRm3VQh2A" target="_blank">UberEats</a>
+                <a href="https://www.doordash.com/business/477891/?utm_source=partner-link&utm_medium=website&utm_campaign=477891&utm_content=red-l" target="_blank">DoorDash</a>
+            </div>
+        </noscript>
+<!---------------------------------------------------------- header -------------------------------------------------------------------------------------------------------------->
+        <header>
+            <img class="ham" id="id" src="./assets/ham.svg" alt="Open Menu">
+            <nav id='nav'>
+                <div class="left">
+                    <img class="logo_nav" src="./assets/full_logo.svg" alt="ChurroStar">
+                    <div class="social_container">
+                        <a href="https://www.facebook.com/ChurroStarTX/" target="_blank"><img class="social" src="./assets/facebook.svg" alt="facebook">
+                            <h2>ChurroStarTx</h2>
+                        </a>
+                        <a href="https://www.instagram.com/churrostartx/" target="_blank"><img class="social" src="./assets/ig.svg" alt="instagram">
+                            <h2>@churrostartx</h2>
+                        </a>
+                    </div>
+                    <div class="orders">
+                        <a href="https://www.ubereats.com/san-antonio/food-delivery/churrostar/MbO0eGmfRiiYJnRm3VQh2A" target="_blank"><img class="uber"  src="./assets/ubereats.jpg" alt="Order Food Delivery with UberEats"></a>
+                        <a href="https://www.doordash.com/business/477891/?utm_source=partner-link&utm_medium=website&utm_campaign=477891&utm_content=red-l" target="_blank"><img class="uber"  src="./assets/doordash.svg" alt="Order Food Delivery with DoorDash"></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#home" id="home_link" SameSite='None'>HOME</a></li>
+                        <li><a href="#locations" id="locations_link" SameSite='None'>LOCATIONS<br> menus & hours</a></li>
+                        <li><a href="#about" id="about_link">ABOUT US</a></li>
+                        <li><a href="#faq" id="faq_link">FAQ</a></li>
+                        <li><a href="#contact" id="contact_link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <img class="drip" id="drip" src="./assets/header.png" alt="header background">
+        </header>
+
+<!---------------------------------------------------------- main -------------------------------------------------------------------------------------------------------------->
+        <main class="home" id="home">
+            <div>
+                <img class="logo" src="./assets/full_logo.svg" alt="ChurroStar">
+                <img class="subtitle" src="./assets/subtitle.svg" alt="An amazing tradition from Spain and Mexico in the heart of San Antonio, TX.">
+                <img class="cursive" src="./assets/cursive.svg" alt="Artisan, Authentic and Fresh Churros">
+                <a href="#locations"><img class="arrow" src="./assets/arrow.svg" alt="arrow pointing down"></a>
+            </div>
+        </main>
+<!---------------------------------------------------------- locations -------------------------------------------------------------------------------------------------------------->
+        <section class="locations" id="locations">
+<!---------------------------------------------------------- slides ------------------------------------------------------------------------>
+            <div class="slideshow-container">
+                <h2>LOCATIONS</h2>
+                <div class="mySlides fade">
+                    <h3>DOWNTOWN - MARKET SQUARE</h3>
+                    <h4>120 Produce Row. San Antonio. TX. 78207</h4>
+                    <div class="links">
+                        <h4 id="1" class="open">MENU</h4>
+                        <h4 id="4" class="open">HOURS</h4>
+                        <h4><a href="https://goo.gl/maps/ZpEaJ2eUfYQt2y62A" target="_blank">MAP</a></h4>
+                        <h4 id="7" class="open">DELIVERY</h4>
+                    </div>
+                </div>
+                <div class="mySlides fade" >
+                    <h3>BUCANERO-EMBASSY</h3>
+                    <h4>13802 Embassy Rd.San Antonio. TX. 78216</h4>
+                    <div class="links">
+                        <h4 id="2" class="open">MENU</h4>
+                        <h4 id="5" class="open">HOURS</h4>
+                        <h4><a href="https://goo.gl/maps/djwvSaGR5C88kxWt8" target="_blank">MAP</a></h4>
+                        <h4 id="7" class="open">DELIVERY</h4>
+                    </div>
+                </div>
+                <div class="mySlides fade" >
+                    <h3>NACOGDOCHES & 410</h3>
+                    <h4>2347 Nacogdoches Rd.San Antonio. TX. 78209</h4>
+                    <div class="links">
+                        <h4 id="3" class="open">MENU</h4>
+                        <h4 id="6" class="open">HOURS</h4>
+                        <h4><a href="https://goo.gl/maps/n7ST4tg5byhuXAzN6" target="_blank">MAP</a></h4>
+                        <h4 id="7" class="open">DELIVERY</h4>
+                    </div>
+                </div>
+                <img class="prev" src="./assets/arrow.svg" alt="Previous location">
+                <img class="next" src="./assets/arrow.svg" alt="Next location">
+            </div>
+            <img class="sky" src="./assets/skyline.svg" alt="">
+
+<!---------------------------------------------------------- MENUS ------------------------------------------------------------------------>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>DOWNTOWN-MARKET SQUARE</h4>
+                    <a href="https://goo.gl/maps/ZpEaJ2eUfYQt2y62A" target="_blank">120 Produce Row. San Antonio. TX. 78207</a>
+                    <ul>
+                        <li><p>4 Churros + 1 dipping sauce <b> $7</b></p></li>
+                        <li><p>(Cajeta, Nutella, Chocolate, Condensed Milk, White Chocolate, Honey)</p></li>
+                        <li><p>Extra Dipping Sauce <b> $1</b></p></li>
+                        <li><p>Cold Drink <b> $2</b></p></li>
+                        <li><p>Regular Coke, Coke Zero, Coke Light, Sprite, Dr Pepper, Powerade</p></li>
+                        <li><p>Cold drink in Vitrolerito <b>$5</b></p></li>
+                        <li><p>Agua fresca in Vitrolerito <b>$8</b></p></li>
+                        <li><p>One Vitrolerito <b> $3</b></p></li>
+                        <li><p>Packet of 4 Vitroleritos <b> $10</b></p></li>
+                    </ul>
+                    <p class="exit">(Click anywhere to close)</p>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h4>BUCANERO-EMBASSY</h4>
+                    <a href="https://goo.gl/maps/djwvSaGR5C88kxWt8" target="_blank">13802 Embassy Rd. San Antonio. TX. 78216</a>
+                    <ul>
+                        <li><p>4 Traditional Churros (Sugar and Cinnamon) <b> $5</b></p></li>
+                        <li><p>Dipping Sauce<b> $1</b></p></li>
+                        <li><p>(Cajeta, Nutella, Chocolate, Condensed Milk, White Chocolate, Honey)</p></li>
+                        <li><p>Filled Churro (Nutella or Cajeta) <b> $3</b></p></li>
+                        <li><p>4 Churros Bañados <b> $8</b></p></li>
+                        <li><p>Churro Sundae <b>$5</b></p></li>
+                        <li><p>Mangonada <b> $4</b></p></li>
+                        <li><p>Bolis <b> $2</b></p></li>
+                        <li><p>Popsicle<b> $2</b></p></li>
+                        <li><p>Raspa<b> $3</b></p></li>
+                        <li><p>Cold Drink<b> $2</b></p></li>
+                        <li><p>Regular Coke, Coke Zero, Coke Light, Sprite, Dr Pepper, Powerade</p></li>
+                        <li><p>One Vitrolerito <b> $3</b></p></li>
+                        <li><p>Packet of 4 Vitroleritos <b> $10</b></p></li>
+                    </ul>
+                    <p class="exit">(Click anywhere to close)</p>
+                </div>
+            </div>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <h4>NACOGDOCHES & 410</h4>
+                    <a href="https://goo.gl/maps/n7ST4tg5byhuXAzN6" target="_blank">2347 Nacogdoches Rd. San Antonio. TX. 78209</a>
+                    <ul>
+                        <li><p>5 Traditional Churros + 1 dipping sauce <b> $7</b></p></li>
+                        <li><p>(Cajeta, Nutella, Chocolate, Condensed Milk, White Chocolate, Honey)</p></li>
+                        <li><p>Filled Churro (Nutella or Cajeta) <b> $2</b></p></li>
+                        <li><p>4 Churros Bañados <b> $5</b></p></li>
+                        <li><p>Churro Sundae <b>$5</b></p></li>
+                        <li><p>Funnel Cake <b>$7</b></p></li>
+                        <li><p>Mangonada <b> $4</b></p></li>
+                        <li><p>Bolis <b> $2</b></p></li>
+                        <li><p>Popsicle<b> $2</b></p></li>
+                        <li><p>Cold Drink<b> $2</b></p></li>
+                        <li><p>Regular Coke, Coke Zero, Coke Light, Sprite, Dr Pepper, Powerade</p></li>
+                        <li><p>One Vitrolerito <b> $3</b></p></li>
+                        <li><p>Packet of 4 Vitroleritos <b> $10</b></p></li>
+                    </ul>
+                    <p class="exit">(Click anywhere to close)</p>
+                </div>
+            </div>
+
+<!---------------------------------------------------------- hours ------------------------------------------------------------------------>
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <h4>DOWNTOWN-MARKET SQUARE</h4>
+                    <div class="hours_cont">
+                        <ul class="left">
+                            <h5>COVID-19 Schedule</h5>
+                            <li><p>Monday: Closed</p></li>
+                            <li><p>Tuesday: Closed</p></li>
+                            <li><p>Wednesday: Closed</p></li>
+                            <li><p>Thursday: 11:00 am- 5:00 pm</p></li>
+                            <li><p>Friday: 11:00 am- 5:00 pm</p></li>
+                            <li><p>Saturday: 11:00 am- 5:00 pm</p></li>
+                            <li><p>Sunday: 11:00 am- 5:00 pm</p></li>
+                        </ul>
+                        <ul class="right">
+                            <h5>Regular Schedule</h5>
+                            <li><p>Monday: 11:00 am- 9:00 pm</p></li>
+                            <li><p>Tuesday: 11:00 am- 9:00 pm</p></li>
+                            <li><p>Wednesday: 11:00 am- 9:00 pm</p></li>
+                            <li><p>Thursday: 11:00 am- 9:00 pm</p></li>
+                            <li><p>Friday: 11:00 am- 11:00 pm</p></li>
+                            <li><p>Saturday: 11:00 am- 11:00 pm</p></li>
+                            <li><p>Sunday: 11:00 am- 9:00 pm</p></li>
+                        </ul>
+                    </div>
+                    <p class="exit">(Click anywhere to close)</p>
+                </div>
+            </div>
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <h4>BUCANERO-EMBASSY</h4>
+                    <div class="hours_cont">
+                        <ul>
+                            <h5>Regular Schedule</h5>
+                            <li><p>Monday: 12:00 pm- 8:00 pm</p></li>
+                            <li><p>Tuesday: 11:00 am- 9:00 pm</p></li>
+                            <li><p>Wednesday: 12:00 pm- 9:00 pm</p></li>
+                            <li><p>Thursday: 12:00 pm- 9:00 pm</p></li>
+                            <li><p>Friday: 11:00 am- 10:00 pm</p></li>
+                            <li><p>Saturday: 11:00 am- 10:30 pm</p></li>
+                            <li><p>Sunday: 11:00 am- 9:00 pm</p></li>
+                        </ul>
+                    </div>  
+                    <p class="exit">(Click anywhere to close)</p>
+                </div>
+            </div>
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <h4>NACOGDOCHES & 410</h4>
+                    <div class="hours_cont">
+                        <ul>
+                            <h5>Regular Schedule</h5>
+                            <li><p>Monday: 5:00 pm - 10:00 pm</p></li>
+                            <li><p>Tuesday: 5:00 pm - 10:00 pm</p></li>
+                            <li><p>Wednesday: 5:00 pm - 10:00 pm</p></li>
+                            <li><p>Thursday: 5:00 pm - 10:00 pm</p></li>
+                            <li><p>Friday: 5:00 pm - 11:00 pm</p></li>
+                            <li><p>Saturday: 5:00 pm - 11:00 pm</p></li>
+                            <li><p>Sunday: 5:00 pm - 10:00 pm</p></li>
+                        </ul>
+                    </div>  
+                    <p class="exit">(Click anywhere to close)</p>
+                </div>
+            </div>
+            <div id="modal7" class="modal">
+                <div class="modal-content">
+                    <h4>Order Now</h4>
+                    <p class="notav">Not all items in the menu are available for delivery</p>
+                    <div class="orders">
+                        <a href="https://www.ubereats.com/san-antonio/food-delivery/churrostar/MbO0eGmfRiiYJnRm3VQh2A" target="_blank"><img class="uber"  src="./assets/ubereats.jpg" alt="Order Food Delivery with UberEats"></a>
+                        <a href="https://www.doordash.com/business/477891/?utm_source=partner-link&utm_medium=website&utm_campaign=477891&utm_content=red-l" target="_blank"><img class="uber"  src="./assets/doordash.svg" alt="Order Food Delivery with DoorDash"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---------------------------------------------------------- about us -------------------------------------------------------------------------------------------------------------->
+        <section class="about" id="about">
+            <div id="container">
+                <h2 id="about_title">ABOUT</h2>
+                <!-- dynamically created with js  -->
+            </div>
+        </section>
+<!---------------------------------------------------------- FAQ -------------------------------------------------------------------------------------------------------------->
+        <section class="faq" id="faq">
+            <ul class="faq_cont">
+                <h2>F.A.Q</h2>
+                <li><h3>Where are you located?</h3><p>We currently have three <a href="#locations" id="locations_link">locations</a> in San Antonio, Texas.</p></li>
+                <li><h3>Do you have Delivery?</h3>
+                    <p>Yes! We offer deliveries through  our partner apps. <br>(                  
+                        <a href="https://www.ubereats.com/san-antonio/food-delivery/churrostar/MbO0eGmfRiiYJnRm3VQh2A" target="_blank">UberEats</a> - 
+                        <a href="https://www.doordash.com/business/477891/?utm_source=partner-link&utm_medium=website&utm_campaign=477891&utm_content=red-l" target="_blank">DoorDash</a>
+                    )</p>
+                </li>
+                <li><h3>Do you Cater?</h3><p>To inquiry about catering <a href="#contact" id="contact_link">Contact Us</a>.</p></li>
+                <li><h3>Are your products suitable for vegetarians?</h3><p>Yes, all of our products are meat free!</p></li>
+                <li><h3>How can I provide feedback for an experience I had in a ChurroStar?</h3><p>Feedback, good or bad, is always welcomed. To do so please <a href="#contact" id="contact_link">Contact Us</a>.</p></li>
+                <li><h3>Why do some locations carry items that others do not?</h3><p>We try to have all our products in every ChurroStars but due to space limitations we cannot offer all foods in some of our locations, make sure to visit them all!</p></li>
+                <li><h3>How can I stay updated on the most current information regarding ChurroStar?</h3>
+                    <p>The best way to stay informed about us in through our social media <br>(
+                        <a href="https://www.facebook.com/ChurroStarTX/" target="_blank">Facebook</a> - 
+                        <a href="https://www.instagram.com/churrostartx/" target="_blank">Instagram</a>
+                    )</p>
+                </li>
+                <li><h3>What products does Churrostar use that might contain peanut?</h3><p>All our prodcuts are free of peanut, we do however use products that contain other types of nuts, for example Nutella. </p></li>
+                <li><h3>Are you open during the covid-19 pandemic?</h3><p>Yes, we are open during the pandemic, we respect and follow all practices to prevent the spread of covid-19 and we hope you do too! to check a locations hours simply click the "hours" button below your desired <a href="#locations" id="locations_link">location</a>.</p></li>
+                <li><h3>We didn't answer your question?</h3><p>Contact us with your questions <a href="#contact" id="contact_link">here</a>.</p></li>
+            </ul>
+        </section>
+<!---------------------------------------------------------- contact us -------------------------------------------------------------------------------------------------------------->
+        <section class="contact" id="contact">
+            <form data-netlify="true" name="contact" method="POST">
+                <h2>CONTACT US</h2>
+                <p>Have a comment or want to ask us a question? <br>Don't hesitate to contact us (We don't store your email adress)</p>
+                <fieldset>
+                    <legend>user contact info</legend>
+                    <label for="name">Name: <input type="text" name="name" title='name' required></label>
+                    <label for="email">Email: <input type="email" name="email" title='email' required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>message input</legend>
+                    <label>Message:<br ><textarea name="message" id="message" cols="auto" rows="auto"></textarea></label>
+                </fieldset>
+                <input type="submit" name="submit" value="Submit" class="submit" target='_blank'>
+            </form>
+        </section>
+    </body>
+    <script src="./scripts/main.js"></script>
+</html>
