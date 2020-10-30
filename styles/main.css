@@ -393,7 +393,13 @@ section.locations div.slideshow-container .mySlides h3 {
 
 section.locations div.slideshow-container .mySlides h4 {
   font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
-  color: #2d3b98;
+  color: #dc383e;
+  text-align: center;
+}
+
+section.locations div.slideshow-container .mySlides p.hours {
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  color: #fcb526;
   text-align: center;
   background-color: white;
   border-radius: 2vw;
@@ -631,6 +637,7 @@ section.faq .faq_cont p {
   color: white;
   margin-bottom: 4vh;
   font-size: 3vh;
+  font-weight: bold;
 }
 
 section.faq .faq_cont a {
@@ -779,9 +786,14 @@ section.contact form input.submit {
     font-size: 4vw;
   }
   section.locations div.slideshow-container .mySlides h4 {
-    font-weight: 300;
-    font-size: 2.5vw;
-    padding: 3vh;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 2vh;
+  }
+  section.locations div.slideshow-container .mySlides p.hours {
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 2vh;
   }
   section.locations div.slideshow-container .mySlides .links {
     width: 100%;
@@ -1081,9 +1093,14 @@ section.contact form input.submit {
     font-size: 4vw;
   }
   section.locations div.slideshow-container .mySlides h4 {
-    font-weight: 300;
-    font-size: 2.5vw;
-    padding: 3vh;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 2vh;
+  }
+  section.locations div.slideshow-container .mySlides p.hours {
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 2vh;
   }
   section.locations div.slideshow-container .mySlides .links {
     width: 100%;
@@ -1362,9 +1379,9 @@ section.contact form input.submit {
   }
   section.locations div.slideshow-container .prev,
   section.locations div.slideshow-container .next {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 60%;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
     width: 7vw;
     z-index: 997;
   }
@@ -1395,6 +1412,12 @@ section.contact form input.submit {
   section.locations div.slideshow-container .mySlides h4 {
     font-weight: regular;
     font-size: 4vw;
+    padding: 4vw;
+    width: 100%;
+  }
+  section.locations div.slideshow-container .mySlides p.hours {
+    font-size: 4vw;
+    font-weight: bold;
     padding: 4vw;
     width: 100%;
   }
