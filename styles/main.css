@@ -267,6 +267,58 @@ body h1 {
   font-size: 0;
 }
 
+#welcomeModal {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#welcomeModal .modal-content {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#welcomeModal .modal-content .gif {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#welcomeModal .modal-content #learnMore {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  z-index: 100;
+  font-family: "Oswald", Oswald, Avenir Next Condensed, Arial Narrow, MS UI Gothic, sans-serif;
+  color: #2d3b98;
+  font-style: italic;
+  text-align: center;
+  font-size: 5vh;
+}
+
+#welcomeModal .modal-content::before {
+  content: "x";
+  position: absolute;
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  right: 50%;
+  color: black;
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
+  z-index: 100;
+}
+
 main.home {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -401,8 +453,8 @@ section.locations div.slideshow-container .mySlides p.hours {
   font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
   color: #fcb526;
   text-align: center;
-  background-color: white;
-  border-radius: 2vw;
+  background-color: #2d3b98;
+  border-radius: 3vh;
 }
 
 section.locations div.slideshow-container .mySlides .links {
@@ -416,7 +468,7 @@ section.locations div.slideshow-container .mySlides .links h4 {
   color: white;
   font-style: italic;
   background-color: #dc389f;
-  border-radius: 2vw;
+  border-radius: 3vh;
   cursor: pointer;
 }
 
@@ -630,6 +682,7 @@ section.faq .faq_cont h2 {
 section.faq .faq_cont h3 {
   font-family: "Oswald", Oswald, Avenir Next Condensed, Arial Narrow, MS UI Gothic, sans-serif;
   color: #2d3b98;
+  margin-bottom: 2vh;
 }
 
 section.faq .faq_cont p {
@@ -648,11 +701,78 @@ section.faq .faq_cont a:hover {
   color: #fcb526;
 }
 
+section.events {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100vw;
+  background-color: rgba(45, 59, 152, 0.75);
+  position: relative;
+}
+
+section.events form {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+}
+
+section.events form h2 {
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+section.events form p {
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  color: #fcb526;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.events form fieldset {
+  border: none;
+}
+
+section.events form fieldset legend {
+  display: none;
+  opacity: 0;
+}
+
+section.events form fieldset label {
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+}
+
+section.events form fieldset input {
+  border: 0.5vmin solid #dc383e;
+  border-radius: 3vh;
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  color: #2d3b98;
+  width: 60%;
+  margin-left: 5vw;
+}
+
+section.events form input.submit {
+  padding: 1vw 2vw;
+  border-radius: 3vh;
+  color: white;
+  background-color: #dc389f;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  float: right;
+}
+
 section.contact {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   width: 100vw;
   background-image: url("../assets/confetti.svg");
+  background-color: white;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,8 +817,8 @@ section.contact form fieldset label {
 
 section.contact form fieldset input {
   border: 0.5vmin solid #87d8f7;
-  border-radius: 2vw;
   font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
+  border-radius: 3vh;
   color: #2d3b98;
 }
 
@@ -707,7 +827,7 @@ section.contact form textarea {
   border: 0.5vmin solid #87d8f7;
   height: 20vh;
   padding: 2vh;
-  border-radius: 2vw;
+  border-radius: 3vh;
   font-family: "Montserrat", Montserrat, DejaVu Sans, Verdana, sans-serif;
   color: #2d3b98;
   margin-top: 2vh;
@@ -715,7 +835,7 @@ section.contact form textarea {
 
 section.contact form input.submit {
   padding: 1vw 2vw;
-  border-radius: 2vw;
+  border-radius: 3vh;
   color: white;
   background-color: #2d3b98;
   border: none;
@@ -724,6 +844,14 @@ section.contact form input.submit {
 }
 
 @media only screen and (min-width: 768px) {
+  #welcomeModal {
+    top: 8vh;
+    height: 92vh;
+  }
+  #welcomeModal .modal-content::before {
+    top: 2vw;
+    font-size: 3vw;
+  }
   main.home img.logo {
     width: 50vw;
     padding-top: 10vmin;
@@ -951,6 +1079,42 @@ section.contact form input.submit {
   }
   section.faq .faq_cont h3 {
     font-size: 4vh;
+  }
+  section.events {
+    height: 100vh;
+    background-size: 100% auto;
+  }
+  section.events form {
+    width: 80vw;
+    height: 80vh;
+    top: 60%;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    padding: 7vh;
+    text-align: center;
+  }
+  section.events form h2 {
+    font-size: 8vh;
+  }
+  section.events form p {
+    font-size: 2vh;
+  }
+  section.events form fieldset {
+    margin: 2vh;
+  }
+  section.events form fieldset label {
+    font-size: 2vh;
+    padding-left: 1vw;
+    padding-top: 3vh;
+  }
+  section.events form fieldset input {
+    padding: 1vh;
+    font-size: 1.75vh;
+  }
+  section.events form input.submit {
+    padding: 1vw 2vw;
+    font-size: 2vh;
+    margin-right: 2%;
   }
   section.contact {
     height: 100vh;
@@ -1031,6 +1195,14 @@ section.contact form input.submit {
 }
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
+  #welcomeModal {
+    top: 8vh;
+    height: 92vh;
+  }
+  #welcomeModal .modal-content::before {
+    top: 2vw;
+    font-size: 3vw;
+  }
   main.home img.logo {
     width: 50vw;
     padding-top: 10vmin;
@@ -1259,6 +1431,42 @@ section.contact form input.submit {
   section.faq .faq_cont h3 {
     font-size: 4vh;
   }
+  section.events {
+    height: 100vh;
+    background-size: 100% auto;
+  }
+  section.events form {
+    width: 80vw;
+    height: 80vh;
+    top: 60%;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    padding: 7vh;
+    text-align: center;
+  }
+  section.events form h2 {
+    font-size: 8vh;
+  }
+  section.events form p {
+    font-size: 2vh;
+  }
+  section.events form fieldset {
+    margin: 2vh;
+  }
+  section.events form fieldset label {
+    font-size: 2vh;
+    padding-left: 1vw;
+    padding-top: 3vh;
+  }
+  section.events form fieldset input {
+    padding: 1vh;
+    font-size: 1.75vh;
+  }
+  section.events form input.submit {
+    padding: 1vw 2vw;
+    font-size: 2vh;
+    margin-right: 2%;
+  }
   section.contact {
     height: 100vh;
     background-size: 100% auto;
@@ -1338,6 +1546,14 @@ section.contact form input.submit {
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
+  #welcomeModal {
+    top: 0;
+    height: 100vh;
+  }
+  #welcomeModal .modal-content::before {
+    top: 8vh;
+    font-size: 7vw;
+  }
   main.home {
     position: relative;
     min-height: -webkit-fill-available;
@@ -1379,9 +1595,9 @@ section.contact form input.submit {
   }
   section.locations div.slideshow-container .prev,
   section.locations div.slideshow-container .next {
-    top: 60%;
-    -webkit-transform: translateY(-60%);
-            transform: translateY(-60%);
+    top: 65%;
+    -webkit-transform: translateY(-65%);
+            transform: translateY(-65%);
     width: 7vw;
     z-index: 997;
   }
@@ -1428,7 +1644,7 @@ section.contact form input.submit {
     display: block;
     font-size: 5vw;
     padding: 1vw 1vw;
-    margin-top: 3vw;
+    margin-top: 2.5vw;
   }
   section.locations .modal {
     top: 0;
@@ -1491,7 +1707,7 @@ section.contact form input.submit {
     margin-bottom: 4vh;
   }
   section.about #container {
-    width: 90vw;
+    width: 80vw;
     height: 80%;
   }
   section.about #container img {
@@ -1502,7 +1718,7 @@ section.contact form input.submit {
     color: #87d8f7;
     margin-bottom: 2vh;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: justify;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1512,8 +1728,9 @@ section.contact form input.submit {
     content: '.';
     color: #fcb526;
     margin-right: 2vw;
+    margin-bottom: 20vh;
     font-size: 10vw;
-    line-height: 4vw;
+    line-height: 3vw;
   }
   section.faq {
     width: auto;
@@ -1536,12 +1753,51 @@ section.contact form input.submit {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  section.events {
+    min-height: 100%;
+    min-height: -webkit-fill-available;
+  }
+  section.events form {
+    width: 90vw;
+    height: 100%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 4vh;
+  }
+  section.events form h2 {
+    font-size: 9vw;
+    padding-top: 8vh;
+  }
+  section.events form p {
+    font-size: 4vw;
+  }
+  section.events form fieldset {
+    -webkit-appearance: none;
+    margin: 2.5vh;
+  }
+  section.events form fieldset label {
+    font-size: 4vw;
+    margin-top: 2vh;
+  }
+  section.events form fieldset input {
+    padding: 2vw;
+    font-size: 3vw;
+    margin-top: 1vh;
+  }
+  section.events form input.submit {
+    -webkit-appearance: none;
+    padding: 2vw 4vw;
+    font-size: 4vw;
+    margin-right: 15%;
+  }
   section.contact {
     min-height: 100%;
     min-height: -webkit-fill-available;
-    background-size: 102vw auto;
+    background-size: 105vw auto;
     background-position: top;
     background-repeat: repeat-y;
+    background-attachment: scroll;
   }
   section.contact form {
     width: 90vw;
@@ -1619,3 +1875,4 @@ section.contact form input.submit {
             transform: rotate(180deg);
   }
 }
+/*# sourceMappingURL=main.css.map */

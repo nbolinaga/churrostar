@@ -68,7 +68,15 @@
             </nav>
             <img class="drip" id="drip" src="./assets/header.png" alt="header background">
         </header>
-
+<!---------------------------------------------------------- Welcome Modal -------------------------------------------------------------------------------------------------------------->
+        <div id="welcomeModal" class="modal sizzy-red-4">
+            <div class="modal-content sizzy-yellow-4">
+                <video class="gif  sizzy-green-4" autoplay loop>
+                    <source src="assets/Events.mp4" type="video/mp4" />
+                </video>
+                <a href="#events"><h2 id="learnMore">Learn More</h2></a>
+            </div>
+        </div>
 <!---------------------------------------------------------- main -------------------------------------------------------------------------------------------------------------->
         <main class="home" id="home">
             <div>
@@ -228,11 +236,28 @@
                 <li><h3>We didn't answer your question?</h3><p>Contact us with your questions <a href="#contact" id="contact_link">here</a>.</p></li>
             </ul>
         </section>
+<!---------------------------------------------------------- Events -------------------------------------------------------------------------------------------------------------->
+        <section class="events" id="events">
+            <form data-netlify="true" name="events" method="POST">
+                <h2>EVENTS</h2>
+                <p>Looking to cater<br>Fill the form and we'll get back to you as soon as possible (We don't store your email adress)</p>
+                <fieldset>
+                    <legend>user contact info</legend>
+                    <label for="name">Name: <input type="text" name="name" title='name' required></label><br>
+                    <label for="email">Email: <input type="email" name="email" title='email' required></label><br>
+                    <label for="date">Date: <input type="date" name="date" title='date' required></label><br>
+                    <label for="time">Time: <input type="time" name="time" title='time' required></label><br>
+                    <label for="location">Location: <input type="text" name="location" title='location' required></label><br>    
+                    <label for="guests">Guests: <input type="number" name="guests" title='guests' required></label>
+                </fieldset>
+                <input type="submit" name="submit" value="Submit" class="submit" target='_blank'>
+            </form>
+        </section>
 <!---------------------------------------------------------- contact us -------------------------------------------------------------------------------------------------------------->
         <section class="contact" id="contact">
             <form data-netlify="true" name="contact" method="POST">
                 <h2>CONTACT US</h2>
-                <p>Have a comment or want to ask us a question? <br>Don't hesitate to contact us (We don't store your email adress)</p>
+                <p>Looking to cater or want to ask us a question? <br>Don't hesitate to contact us (We don't store your email adress)</p>
                 <fieldset>
                     <legend>user contact info</legend>
                     <label for="name">Name: <input type="text" name="name" title='name' required></label>
@@ -240,7 +265,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>message input</legend>
-                    <label>Message:<br ><textarea name="message" id="message" cols="auto" rows="auto"></textarea></label>
+                    <label>Message:<br ><textarea name="message" id="message" cols="auto" rows="auto" ></textarea></label>
                 </fieldset>
                 <input type="submit" name="submit" value="Submit" class="submit" target='_blank'>
             </form>
