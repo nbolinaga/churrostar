@@ -60,6 +60,10 @@ $(document).ready(function () {
     drip.toggleClass('open');
     nav.toggleClass('open');
   });
+  $('#events_link').click(function () {
+    drip.toggleClass('open');
+    nav.toggleClass('open');
+  });
   // SLIDES -----------------------------------------------------------------------------------------------------------------------
   var slideIndex = 1;
   showSlides(slideIndex);

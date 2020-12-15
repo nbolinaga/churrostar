@@ -1097,19 +1097,19 @@ section.contact form input.submit {
     font-size: 8vh;
   }
   section.events form p {
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
   section.events form fieldset {
     margin: 2vh;
   }
   section.events form fieldset label {
-    font-size: 2vh;
+    font-size: 3vh;
     padding-left: 1vw;
     padding-top: 3vh;
   }
   section.events form fieldset input {
     padding: 1vh;
-    font-size: 1.75vh;
+    font-size: 2vh;
   }
   section.events form input.submit {
     padding: 1vw 2vw;
@@ -1448,19 +1448,19 @@ section.contact form input.submit {
     font-size: 8vh;
   }
   section.events form p {
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
   section.events form fieldset {
     margin: 2vh;
   }
   section.events form fieldset label {
-    font-size: 2vh;
+    font-size: 3vh;
     padding-left: 1vw;
     padding-top: 3vh;
   }
   section.events form fieldset input {
     padding: 1vh;
-    font-size: 1.75vh;
+    font-size: 2vh;
   }
   section.events form input.submit {
     padding: 1vw 2vw;
@@ -1718,7 +1718,7 @@ section.contact form input.submit {
     color: #87d8f7;
     margin-bottom: 2vh;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 2.5vh;
     text-align: justify;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1735,6 +1735,7 @@ section.contact form input.submit {
   section.faq {
     width: auto;
     height: 100%;
+    overflow: hidden;
   }
   section.faq h2 {
     margin-top: 10vh;
